@@ -69,17 +69,17 @@
 }
 body {
   margin: 0;
-  font-size: 32px;
+  font-size: 30px;
 }
 
-
-
 #navbar {
+
   overflow: hidden;
   background-color: #fefaf0;
   color: black;
-  padding-left: 30vw;
-  padding-right: 3vw;
+  align-items: center;
+  align: center;
+  z-index: 1;
 }
 
 #navbar a {
@@ -99,7 +99,7 @@ body {
   font-weight: 900;
   }
 
-#navbar a.active {
+#navbar a:active {
   color: coral;
   font-weight: 900;
 
@@ -136,20 +136,18 @@ body {
 
 .about {
   position: relative;
-  z-index: -1;
   width: 50%;
   margin: 0 auto;
   left: 25%;
   background: #ffc950;
   padding: 50px;
   margin: 20px;
-  font-size: 30px;
+  font-size: 20px;
   color: #fefaf0;
   text-align: center;
   letter-spacing: 2px;
   border: black 1px solid;
   border-radius: 20px;
-  font-family: 'Parisienne', cursive;
 }
 .about h3 {
   font-family: 'Permanent Marker', cursive;
@@ -157,18 +155,27 @@ body {
 
 .section3 {
   width: 100%;
-  height: 100vh;
 }
 
-/* flowers-page ----------------------------------------------------------------*/
-#bootstrap-override .flowers-container {
+/* destinations-page --------------------------------------------------------*/
+
+.section3 {
+  padding: 60px;
+  overflow: auto;
+}
+
+.section3 h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+#bootstrap-override .destinations-container {
   position: relative;
   top: 100px;
   size: 95%;
   padding: 10px;
 }
 
-#bootstrap-override .flowers-container .row {
+#bootstrap-override .destinations-container .row {
   padding: 10px;
 }
 
@@ -189,10 +196,12 @@ body {
   opacity: 1;
 }
 
-#bootstrap-override .col-sm-4 img {
-  display: block;
-  width: 100%;
-  height: auto;
+#bootstrap-override #section3 .col-sm-4 .img {
+  /* display: block; */
+  padding: 20px;
+  border: 2px black solid;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 #bootstrap-override .col-sm-4 .text {
@@ -215,4 +224,20 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 400;
+}
+
+#bootstrap-override footer {
+  margin:0;
+  width: 100%;
+  bottom: 0;
+  padding: 10px 0;
+  background: white;
+  text-align: center;
+  position: relative;
+}
+
+#bootstrap-override footer .inline {
+  /* putting social media icons in line with text */
+  display: inline;
+  padding: 0;
 }
