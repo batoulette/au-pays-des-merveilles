@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
+.load{
+    animation: slide 2s;
+}
+.slider{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    animation: slide 20s infinite;
+}
+.content{
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 127, 80, 0.3);
+}
+.principal{
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+}
+.principal h1{
+    font-size: 90px;
+    margin-bottom: 20px;
+    font-family: 'Permanent Marker', cursive;
+}
+@keyframes slide{
+    0%{
+        background-image: url('../images/image1.jpg');
+    }
+    20%{
+        background-image: url('../images/image1.jpg');
+    }
+    20.01%{
+        background-image: url('../images/image2.jpg');
+    }
+    40%{
+        background-image: url('../images/image2.jpg');
+    }
+    40.01%{
+        background-image: url('../images/image3.jpg');
+    }
+    60%{
+        background-image: url('../images/image3.jpg');
+    }
+    60.01%{
+        background-image: url('../images/image4.jpg');
+    }
+    80%{
+        background-image: url('../images/image4.jpg');
+    }
+    80.01%{
+        background-image: url('../images/image5.jpg');
+    }
+    100%{
+        background-image: url('../images/image5.jpg');
+    }
+}
+body {
+  margin: 0;
+  font-size: 32px;
+}
+
+
+
+#navbar {
+  overflow: hidden;
+  background-color: #fefaf0;
+  color: black;
+  padding-left: 30vw;
+  padding-right: 3vw;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+
+}
+
+#navbar a:hover {
+  /* background-color: #fff; */
+  color: black;
+  font-weight: 900;
+  }
+
+#navbar a.active {
+  color: coral;
+  font-weight: 900;
+
+}
+/*
+.content {
+  padding: 16px;
+} */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: coral;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+.section2 {
+  background-image: url('../images/check.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 80vh;
+}
+
+/* .overlay {
+  width: 100%;
+  height: 100vh;
+  margin: auto 0;
+} */
+
+.about {
+  position: relative;
+  width: 60%;
+  margin: 0 auto ;
+  align: center;
+  background: coral;
+  padding: 30px;
+  margin: 20px;
+  font-size: 40px;
+  font-weight: 100;
+  color: #fefaf0;
+  text-align: center;
+  letter-spacing: 2px;
+}
