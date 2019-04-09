@@ -136,15 +136,83 @@ body {
 
 .about {
   position: relative;
-  width: 60%;
-  margin: 0 auto ;
-  align: center;
-  background: coral;
-  padding: 30px;
+  z-index: -1;
+  width: 50%;
+  margin: 0 auto;
+  left: 25%;
+  background: #ffc950;
+  padding: 50px;
   margin: 20px;
-  font-size: 40px;
-  font-weight: 100;
+  font-size: 30px;
   color: #fefaf0;
   text-align: center;
   letter-spacing: 2px;
+  border: black 1px solid;
+  border-radius: 20px;
+  font-family: 'Parisienne', cursive;
+}
+.about h3 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.section3 {
+  width: 100%;
+  height: 100vh;
+}
+
+/* flowers-page ----------------------------------------------------------------*/
+#bootstrap-override .flowers-container {
+  position: relative;
+  top: 100px;
+  size: 95%;
+  padding: 10px;
+}
+
+#bootstrap-override .flowers-container .row {
+  padding: 10px;
+}
+
+#bootstrap-override .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .4s ease;
+  background-color: rgba(255,255,255,0.6);
+}
+
+#bootstrap-override .col-sm-4:hover .overlay {
+  opacity: 1;
+}
+
+#bootstrap-override .col-sm-4 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#bootstrap-override .col-sm-4 .text {
+  /*text over images upon hover  */
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 200px;
+  padding: 40px;
+}
+
+#bootstrap-override .col-sm-4 a {
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
 }
