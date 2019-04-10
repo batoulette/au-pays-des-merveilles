@@ -214,7 +214,13 @@ if answer.lower().strip() == "yes" or answer == "y":
                             surprises for one day and prefer to exercise caution where
                             your life is at stake! After some time of walking you begin
                             to feel tired and find a nice space to shut your eyes...*yawn*
+                            Press 1 to continue.
                             """
+                            any_3 = raw_input()
+                            if any_3 == "1":
+                                pathway()
+                            else:
+                                print "Answer is invalid."
 
                     elif abyss == "no":
                         print"""
@@ -226,10 +232,10 @@ if answer.lower().strip() == "yes" or answer == "y":
                         """
 
                         any = raw_input()
-                        if any == (1):
-                            print get_out
-                        elif any == (1):
-                            print get_out
+                        if any == "1":
+                            pathway()
+                        else:
+                            print "Answer is invalid."
 
                 elif exploring == "no":
                     print """
@@ -320,7 +326,14 @@ if answer.lower().strip() == "yes" or answer == "y":
                         print """
                         You drink the water, but begin to feel a little queasy.
                         \nYou decide to take a rest on the forest
-                        floor near some large trees..."""
+                        floor near some large trees...press 1 to continue.
+                        Press 1 to continue."""
+
+                        any_1 = raw_input()
+                        if any_1 == "1":
+                            pathway()
+                        else:
+                            print "Answer is invalid."
 
                     elif water == "no":
                         print """
@@ -335,7 +348,7 @@ if answer.lower().strip() == "yes" or answer == "y":
                 so that you are left with 2 paths.
                 Do you go left or right?"""
 
-                choice = raw_input
+                choice = raw_input()
                 if choice == "right":
                     print """
                     You turn right and begin heading deeper into the forest.
@@ -379,7 +392,14 @@ if answer.lower().strip() == "yes" or answer == "y":
                         print """
                         You drink the water, but begin to feel a little
                         queasy. You decide to take a rest on the forest
-                        floor near some large trees..."""
+                        floor near some large trees...
+                        Press 1 to continue"""
+
+                        any_2 = raw_input()
+                        if any_2 == "1":
+                            pathway()
+                        else:
+                            print "Answer is invalid."
 
                     elif thirst == "no":
                         print """
