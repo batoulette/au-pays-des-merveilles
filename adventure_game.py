@@ -1,17 +1,80 @@
+#--functions
 def pathway():
     print """
     You are knocked over the head with a heavy object and lose consciousness.
     When you come around you find yourself at the beginning of what looks to be a maze.
-    \nDo you follow the paths to try and get out?
+    \nDo you follow the paths to try and get out? (yes/no)
     """
     get_out = raw_input()
     if get_out == "yes":
         print """
         You follow the path and encounter dead ends
         and circles. Eventually you find what looks
-        to be an exit.
-        You walk through and
+        to be an exit.You walk through and see a tall
+        glass building catching the sun. You spot a door.
+        \n Do you knock?
         """
+        knock = raw_input()
+        if knock == "yes":
+            print """
+            The door opens and you step inside.
+            Suddenly , you slip and land on a conveyor belt.
+            You are propelled into darkness. The belt continues to drag you
+            until you are dropped into a seat below.  You feel a string brush
+            against your nose.
+            \nDo you pull the string?"""
+
+            string = raw_input()
+            if string =="yes":
+                print """You decide to pull it. The lights switch on.
+                You see that you are on a red chair with two blue boxes
+                in front of you numbered 1 and 2.
+                \nWhich number box do you open?"""
+
+                box = raw_input()
+                if box == "1":
+                    print """You choose box number %d. You open the lid.
+                    Suddenly you begin to feel ill. You're struck with flashbacks
+                    of all your past wrongdoings. Creatures begin to escape the box.
+                    Surely it can't be?
+                    You've unleashed Pandora's box!!""" % box
+                elif box == "2":
+                    print """You choose box number %d. You open the lid which reveals a pill
+                    and note reading: Congratulations for making it this far!
+                    You have proved yourself a worthy traveller of this world and beyond.
+                    Please chew this capsule to transport you back to freedom.
+                    \nThank you for playing our game!""" % box
+
+                else:
+                    print "That's not a box, you've come so far"
+
+            elif string == "no":
+                print """You remain in darkness, scared for your life.
+                How will you get food? How will you survive?"""
+
+        elif knock == "no":
+            print """
+            You decide not to knock on the door.
+            A frail old lady approaches you from behind with
+            a basket of muffins. She wasn't there before was she?
+             She offers one to you.
+            \nDo you take a bite? """
+
+            bite = raw_input()
+            if bite == "yes":
+                print """
+                You take a bite and notice it's particularly sweet taste.
+                You've never tasted anything like this in your life.
+                As you devour the muffin, your throat begins to feel a little itchy.
+                The woman cackles in the background as she waddles away back into the maze.
+                \nYou have been poisoned!"""
+
+            elif bite == "no":
+                print """
+                The door of the glass building creaks open and
+                the old lady boots you inside!
+                \nYou are trapped!"""
+
     elif get_out == "no":
         print """
         You sit tight, hoping someone will find you.
@@ -159,11 +222,13 @@ if answer.lower().strip() == "yes" or answer == "y":
                         As you reach near to the cave entrance, you discover a flower
                         with a wonderful scent, you wander over to smell it.
                         \nMmm such a lovely smell, reminds me of my favourite perfume....
-                        Press any key
+                        Press 1 to continue.
                         """
 
                         any = raw_input()
-                        if any == (""):
+                        if any == (1):
+                            print get_out
+                        elif any == (1):
                             print get_out
 
                 elif exploring == "no":
