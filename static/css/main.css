@@ -32,7 +32,7 @@
 }
 .principal h1{
     font-size: 90px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     font-family: 'Permanent Marker', cursive;
 }
 @keyframes slide{
@@ -73,7 +73,6 @@ body {
 }
 
 #navbar {
-
   overflow: hidden;
   background-color: #fefaf0;
   color: black;
@@ -120,14 +119,9 @@ body {
   padding-top: 60px;
 }
 .section2 {
-  background-image: url('../images/check.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100vw;
-  height: 80vh;
+  background: #d4ea79;
+  height: 70vh;
 }
-
 /* .overlay {
   width: 100%;
   height: 100vh;
@@ -136,28 +130,26 @@ body {
 
 .about {
   position: relative;
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
-  left: 25%;
-  background: #ffc950;
+  left: 20%;
   padding: 50px;
+  padding-top: 80px;
   margin: 20px;
   font-size: 20px;
-  color: #fefaf0;
+  color: white;
   text-align: center;
   letter-spacing: 2px;
-  border: black 1px solid;
-  border-radius: 20px;
+  text-align: justify;
 }
 .about h3 {
-  font-family: 'Permanent Marker', cursive;
 }
 
 .section3 {
   width: 100%;
 }
 
-/* destinations-page --------------------------------------------------------*/
+/* Discover --------------------------------------------------------*/
 
 .section3 {
   padding: 60px;
@@ -197,7 +189,7 @@ body {
 }
 
 #bootstrap-override #section3 .col-sm-4 .img {
-  /* display: block; */
+  display: block;
   padding: 20px;
   border: 2px black solid;
   border-radius: 20px;
@@ -224,6 +216,21 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 400;
+}
+/* SECTION 4 - GAME */
+
+.section4 {
+  background: #ffd880;
+  width: 100vw;
+  height: 80vh;
+}
+
+
+.section4 h2 {
+  text-align: center;
+  padding: 20px;
+
+
 }
 
 #bootstrap-override footer {
