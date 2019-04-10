@@ -406,8 +406,7 @@ if answer.lower().strip() == "yes" or answer == "y":
                         You carry on, not wanting to take the risk.
                         Surely there must be some people around here, right?"""
                 else:
-                    print "Are you lost already?"
-
+                    print "Are you lost already? Please start again!"
 
             else:
                 print "This wasn't an option..."
@@ -422,16 +421,14 @@ if answer.lower().strip() == "yes" or answer == "y":
             screaming for help! Hopefully the villagers will reach you
             before the tigers ey?"""
 
+
     elif keys == "3":
-        print "You chose key number %s." % keys
+        print """
+        You chose key number %s.
+        This is the key to failure.
+        Better luck next time!""" % keys
     else:
         print "Hey, that's not a key!"
-
-
-
-
-
-
 
 
 elif answer.lower().strip() == "no" or answer == "n":
